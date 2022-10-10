@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/6342f298fa235fdce87a8a6a
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "name":"Maria Claro",
+  "email":"email@gmail.com",
+  "gender":"Female"
+}
+
+###
+PATCH  http://localhost:5000/users/6342f298fa235fdce87a8a6a
+Content-Type: application/json
+
+{
+  "name":"Maria Lopes",
+  "email":"email.maria@gmail.com",
+  "gender":"Female"
+}
+
+###
+DELETE  http://localhost:5000/users/6342f298fa235fdce87a8a6a
